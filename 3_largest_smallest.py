@@ -1,5 +1,5 @@
 # Program to print largest and smallest element in an array
-l=eval(input("Enter a list: "))
+l=list(map(int,input("Enter a list: ").split()))
 length=len(l)
 min=l[0]
 max=l[0]
