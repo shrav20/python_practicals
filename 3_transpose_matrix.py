@@ -1,14 +1,15 @@
-# Program to find transpose of matrix
-l=eval(input("Enter a 2-D list"))
-print("The given matrix is: ")
-for i in l:
-    for j in i:
-        print(j,end=' ')
-    print()
-print("Transpose of the above matrix is: ")
-rows=len(l)
-cols=len(l[0])
-for i in range(rows):
-    for j in range(cols):
-        print(l[j][i],end=' ')
-    print()
+a=[[12,7],
+    [4,5],
+    [3,8]]
+
+r= [[0,0,0],
+    [0,0,0]]
+row=len(a)
+col=len(a[0])
+
+for i in range(row):
+    for j in range(col):
+        r[j][i] = a[i][j]
+
+for i in r:
+    print(i)
