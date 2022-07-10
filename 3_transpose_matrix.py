@@ -6,9 +6,9 @@ for i in l:
         print(j,end=' ')
     print()
 print("Transpose of the above matrix is: ")
-rows=len(l[0])
-cols=len(l)
-for i in range(cols):
-    for j in range(rows):
+rows=len(l)
+cols=len(l[0])
+for i in range(rows):
+    for j in range(cols):
         print(l[j][i],end=' ')
     print()
